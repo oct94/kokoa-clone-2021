@@ -13,9 +13,19 @@
 }
 
 .main-chats {
-  margin-top: 1500px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .chats-screen .status-bar {
-  z-index: 1;
+  z-index: 2;
+}
+
+.chats__timestamp {
+  color: white;
+  background-color: #92a4b2;
+  padding: 10px 15px;
+  border-radius: 20px;
 }
