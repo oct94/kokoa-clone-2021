@@ -12,3 +12,28 @@
   left: 15px;
   bottom: 15px;
 }
+
+.user-component__slide-badge {
+  background-color: tomato;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  font-weight: 600;
+  animation: slideBadge 2s ease-in-out infinite;
+}
+
+@keyframes slideBadge {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateX(-15px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}

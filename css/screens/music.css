@@ -1,0 +1,114 @@
+.screen-header__input {
+  position: relative;
+}
+
+.screen-header__input input {
+  padding: 10px 50px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.screen-header__input i {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.music-contents {
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  border-bottom: 10px solid rgba(0, 0, 0, 0.05);
+  padding: var(--horizontal-space) 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.music-contents__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.music-contents__column:hover {
+  cursor: pointer;
+  color: hotpink;
+  transition: 0.3s ease-in-out;
+}
+
+.music-contents__tittle {
+  padding-top: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.music-mv__video {
+  text-align: center;
+  padding: 0px var(--horizontal-space);
+}
+
+.music-mv__video video {
+  width: 420px;
+  height: 290px;
+}
+
+.music-mv__buy {
+  text-align: center;
+  padding-bottom: var(--horizontal-space);
+  border-bottom: 10px solid rgba(0, 0, 0, 0.05);
+}
+
+.music-mv__buy button {
+  padding: 15px 142px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.music-mv__buy button:hover {
+  background-color: hotpink;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.music-mv__buy button:focus {
+  cursor: progress;
+  background-color: white;
+  color: black;
+}
+
+.music-recommend {
+  padding: var(--horizontal-space);
+}
+
+.music-recommend__column-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: var(--horizontal-space);
+}
+
+.music-recommend__column-info h1 {
+  padding-right: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.music-recommend__column-albums {
+  display: flex;
+  justify-content: space-around;
+}
+
+.music-recommend__column-albums span {
+  display: flex;
+  border: 1px solid rgb(51, 154, 240);
+  color: rgb(51, 154, 240);
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+
+@keyframes musicAlbum {
+  from {
+  }
+}

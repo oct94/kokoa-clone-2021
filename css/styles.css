@@ -7,6 +7,8 @@
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chats.css";
+@import "screens/search.css";
+@import "screens/music.css";
 /*components*/
 @import "components/status-bar.css";
 @import "components/nav-bar.css";

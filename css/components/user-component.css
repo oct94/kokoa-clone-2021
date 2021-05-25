@@ -6,6 +6,7 @@
 .user-component__column {
   display: flex;
   align-items: center;
+  margin-bottom: 35px;
 }
 
 .user-component__avatar {
@@ -37,10 +38,49 @@
   border-radius: 25px;
 }
 
+.user-component__avatar--xs {
+  width: 40px;
+  height: 40px;
+}
+
 .user-component__title--not-bold {
   font-weight: 400;
 }
 
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__column .slide-friends {
+  padding-right: var(--horizontal-space);
+}
+
+.user-component__column .slide-friends,
+.user-component__column .slide-friends__click:hover {
+  cursor: pointer;
+  color: hotpink;
+  transition: 0.3s ease-in-out;
+}
+
+@keyframes slideFriends {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.user-component__slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.user-component__slide-info {
+  display: flex;
+  align-items: center;
 }
