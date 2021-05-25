@@ -43,24 +43,31 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
+.music-mv {
+  padding: 40px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 140vw;
+  height: 40vh;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.05);
+}
+
 .music-mv__video {
-  text-align: center;
   padding: 0px var(--horizontal-space);
 }
 
 .music-mv__video video {
-  width: 420px;
-  height: 290px;
+  width: 190px;
+  height: 145px;
 }
 
 .music-mv__buy {
-  text-align: center;
   padding-bottom: var(--horizontal-space);
-  border-bottom: 10px solid rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
 .music-mv__buy button {
-  padding: 15px 142px;
+  padding: 5px 25px;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -88,6 +95,25 @@
   justify-content: center;
   align-items: center;
   padding-bottom: var(--horizontal-space);
+}
+
+.music-recommend__column-info:hover i {
+  color: hotpink;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  animation: recommendIcon 2s ease-in-out infinite;
+}
+
+@keyframes recommendIcon {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 .music-recommend__column-info h1 {
